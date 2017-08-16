@@ -1,0 +1,103 @@
+﻿@model LiveMeds.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <img src="@Url.Content(Model.ImagePath)" width="300px" height="200px" alt="Image" />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuyingPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuyingPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SellingPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SellingPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sold)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sold)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Formulation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Formulation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manufacturer)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackagingType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackagingType)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.productId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+    
